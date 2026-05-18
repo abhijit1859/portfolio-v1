@@ -13,16 +13,6 @@ The goal of this project was to create a clean and modern developer portfolio wi
 - Lucide React
 - React Icons
 
-## Features
-
-- Dark / Light mode
-- Responsive design
-- Smooth scrolling navigation
-- Interactive hero section
-- Featured projects showcase
-- Tech stack section
-- GitHub contribution heatmap
-- Modern UI with subtle glassmorphism
 
 ## Running Locally
 
