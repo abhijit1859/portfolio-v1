@@ -3,39 +3,62 @@
 import Image from "next/image"
 import profilePhoto from "../../public/profile.jpg"
 import { ArrowRight, Download } from "lucide-react"
+import { TypeAnimation } from "react-type-animation"
 
 export default function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 lg:px-8 py-22 bg-background overflow-hidden">
+    <section id="home" className="min-h-screen relative flex items-center justify-center px-4 lg:px-8 py-22 bg-background overflow-hidden">
       <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        
+
+
         
         {/* LEFT CONTENT */}
         <div className="space-y-3">
           
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-teal-500/20 bg-teal-500/10 px-4 py-2 text-sm text-teal-400 backdrop-blur-md">
-            <span className="h-2 w-2 rounded-full bg-teal-400 animate-pulse" />
+            <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
             Available for work
           </div>
 
-          {/* Heading */}
-          <div className="space-y-6">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight tracking-tight">
-              Full Stack
-              <span className="block text-teal-400">
-                Developer
-              </span>
-            </h1>
+           {/* Heading */}
+<div className="space-y-6">
+  
+<h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight">
+  <span className="text-foreground">
+    I’m a{" "}
+  </span>
 
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Backend engineer focused on building scalable systems using{" "}
-              <span className="text-foreground font-medium">
-                Java, Go, Kafka, Redis, and modern cloud architecture.
-              </span>{" "}
-              I enjoy understanding systems deeply and building things from
-              scratch while sharing my learnings through technical writing.
-            </p>
-          </div>
+  <TypeAnimation
+    sequence={[
+      "Full Stack Developer",
+      2000,
+      "Backend Engineer",
+      2000,
+      "AI Engineer",
+      2000,
+      "System Design Enthusiast",
+      2000,
+      "Learner",
+      2000
+    ]}
+     
+    speed={50}
+    repeat={Infinity}
+    className="text-teal-400"
+  />
+</h1>
+
+  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+    Full stack developer focused on building scalable applications with a strong
+    interest in backend systems, distributed architecture, and AI-powered
+    products using{" "}
+    <span className="text-foreground font-medium">
+      Kafka, Redis, Go, NestJS, and LangChain,etc.
+    </span>
+  </p>
+</div>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-5 pt-2">
