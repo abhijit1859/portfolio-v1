@@ -64,16 +64,20 @@ export default function Navbar() {
           >
             Resume
           </a>
+          <a href="/blogs"
+          className="transition hover:text-primary dark:hover:text-teal-400"
+          >
+            Blog
+          </a>
 
           <a
-            href="#contact"
+            href="/contact"
             className="transition hover:text-primary dark:hover:text-teal-400"
           >
             Contact
           </a>
 
-          {/* Theme Toggle */}
-          <button
+           <button
             onClick={toggleTheme}
             className="p-2 rounded-md border border-border hover:bg-accent transition dark:hover:text-teal-400"
           >

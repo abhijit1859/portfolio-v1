@@ -1,3 +1,4 @@
+import Navbar from "@/components/layout/Navbar"
 import "./globals.css"
  
 import { Manrope } from "next/font/google"
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        <Navbar/>
          
           {children}
   

@@ -7,21 +7,20 @@ export default function GithubHeatmap() {
     <section className=" px-2 py-28">
       <div
         className="
-        max-w-8xl mx-auto
+        max-w-6xl mx-auto
         rounded-3xl
 
-        p-4 md:p-8
+        py-24 px-4 sm:px-6 lg:px-8
         overflow-hidden
-        flex items-center jsutify-center
+        flex items-center justify-center
         "
       >
-        
-        {/* Header */}
+
         <div className="mb-10 ">
-           
+
 
           <h2 className="mt-3 text-4xl md:text-5xl font-semibold tracking-wider">
-            GitHub <br /> 
+            GitHub <br />
           </h2>
 
           <p className="mt-4 text-muted-foreground max-w-lg leading-relaxed">
@@ -30,7 +29,6 @@ export default function GithubHeatmap() {
           </p>
         </div>
 
-        {/* Heatmap */}
         <div
           className="
            
