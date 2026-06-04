@@ -37,7 +37,7 @@ export default function Navbar() {
           href="/"
           className=" font-bold tracking-wider text-2xl"
         >
-          Abhijit <span className="dark:text-teal-300">Kumar</span>
+          Abhijit <span className="dark:text-emerald-400">Kumar</span>
         </Link>
 
  
@@ -45,14 +45,14 @@ export default function Navbar() {
           
           <a
             href="#home"
-            className="transition hover:text-primary dark:hover:text-teal-400"
+            className="transition hover:text-primary dark:hover:text-emerald-400"
           >
             About
           </a>
 
           <a
             href="#projects"
-            className="transition hover:text-primary dark:hover:text-teal-400"
+            className="transition hover:text-primary dark:hover:text-emerald-400"
           >
             Projects
           </a>
@@ -60,26 +60,26 @@ export default function Navbar() {
           <a
             href="/resume.pdf"
             target="_blank"
-            className="transition hover:text-primary dark:hover:text-teal-400"
+            className="transition hover:text-primary dark:hover:text-emerald-400"
           >
             Resume
           </a>
           <a href="/blogs"
-          className="transition hover:text-primary dark:hover:text-teal-400"
+          className="transition hover:text-primary dark:hover:text-emerald-400"
           >
             Blog
           </a>
 
           <a
             href="/contact"
-            className="transition hover:text-primary dark:hover:text-teal-400"
+            className="transition hover:text-primary dark:hover:text-emerald-400"
           >
             Contact
           </a>
 
            <button
             onClick={toggleTheme}
-            className="p-2 rounded-md border border-border hover:bg-accent transition dark:hover:text-teal-400"
+            className="p-2 rounded-md border border-border hover:bg-accent transition dark:hover:text-emerald-400"
           >
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
