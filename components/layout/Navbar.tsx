@@ -30,58 +30,67 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full border-b border-border bg-background/70 backdrop-blur-md z-50">
-      <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between ">
+      <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         
-      
         <Link
           href="/"
-          className=" font-bold tracking-wider text-2xl"
+          className="font-serif font-semibold tracking-tight text-xl text-foreground"
         >
-          Abhijit <span className="dark:text-emerald-400">Kumar</span>
+          abhijit<span className="font-sans font-light text-muted-foreground">kumar</span>
         </Link>
-
  
-        <div className="flex items-center gap-6  font-medium text-lg">
+        <div className="flex items-center gap-6 font-medium text-sm sm:text-base">
           
-          <a
-            href="#home"
-            className="transition hover:text-primary dark:hover:text-emerald-400"
+          <Link
+            href="/#home"
+            className="transition-colors text-muted-foreground hover:text-foreground"
           >
             About
-          </a>
+          </Link>
 
-          <a
-            href="#projects"
-            className="transition hover:text-primary dark:hover:text-emerald-400"
+          <Link
+            href="/#projects"
+            className="transition-colors text-muted-foreground hover:text-foreground"
           >
             Projects
-          </a>
+          </Link>
+
+          <Link
+            href="/experience"
+            className="transition-colors text-muted-foreground hover:text-foreground"
+          >
+            Experience
+          </Link>
 
           <a
             href="/resume.pdf"
             target="_blank"
-            className="transition hover:text-primary dark:hover:text-emerald-400"
+            rel="noopener noreferrer"
+            className="transition-colors text-muted-foreground hover:text-foreground"
           >
             Resume
           </a>
-          <a href="/blogs"
-          className="transition hover:text-primary dark:hover:text-emerald-400"
+          
+          <Link 
+            href="/blogs"
+            className="transition-colors text-muted-foreground hover:text-foreground"
           >
             Blog
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/contact"
-            className="transition hover:text-primary dark:hover:text-emerald-400"
+            className="transition-colors text-muted-foreground hover:text-foreground"
           >
             Contact
-          </a>
+          </Link>
 
-           <button
+          <button
             onClick={toggleTheme}
-            className="p-2 rounded-md border border-border hover:bg-accent transition dark:hover:text-emerald-400"
+            className="p-2 rounded-lg border border-border hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Toggle theme"
           >
-            {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+            {darkMode ? <Sun size={16} /> : <Moon size={16} />}
           </button>
         </div>
       </nav>
